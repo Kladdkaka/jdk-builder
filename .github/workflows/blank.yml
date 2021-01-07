@@ -28,7 +28,7 @@ jobs:
           vs-version: 12.0.21005.1
         
       - name: Git clone
-        run: git clone https://github.com/HotswapProjects/openjdk-jdk8u-dcevm.git --branch dcevm8u202b08 --single-branch openjdk-jdk8u-dcevm
+        run: git clone https://github.com/HotswapProjects/openjdk-jdk8u-dcevm.git --branch dcevm8u202b08 --depth 1 --single-branch openjdk-jdk8u-dcevm
         
        #   repository: HotswapProjects/openjdk-jdk8u-dcevm
        #   ref: dcevm8u202b08
