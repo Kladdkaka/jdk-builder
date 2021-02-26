@@ -22,10 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Install 2010
+      - name: Install vs
         run: |
-          choco install vs2010sdk
-          
+          choco install microsoft-build-tools --version 12.0.21005.20140416 --force
+      
       - name: Git clone
         run: git clone https://github.com/HotswapProjects/openjdk-jdk8u-dcevm.git --branch dcevm8u282b08 --depth 1 --single-branch openjdk-jdk8u-dcevm
         
