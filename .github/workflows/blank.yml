@@ -51,6 +51,7 @@ jobs:
           install: >-
             zip
             unzip
+            diffutils
       
       - shell: msys2 {0}
         run: |
