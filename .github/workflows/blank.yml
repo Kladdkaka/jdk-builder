@@ -55,4 +55,16 @@ jobs:
       - shell: msys2 {0}
         run: |
           cd openjdk-jdk8u-dcevm
+          # unset cygwin's gcc preconfigured
+          unset -v CC
+          unset -v CXX
+
+          export TOOLCHAIN_VERSION="2013"
+          unset VS120COMNTOOLS
+          unset VS110COMNTOOLS
+          unset VS140COMNTOOLS
+          
+          export LOG=info
+          export LANG=C
+          
           bash ./configure
