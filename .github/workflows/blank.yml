@@ -52,6 +52,7 @@ jobs:
             zip
             unzip
             diffutils
+            base-devel
       
       - shell: msys2 {0}
         run: |
