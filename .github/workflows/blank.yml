@@ -24,6 +24,7 @@ jobs:
     steps:
       - name: Install vs
         run: |
+          choco install --force --force-dependencies visualcpp-build-tools windows-sdk-8.1
           choco install microsoft-build-tools --version 12.0.21005.20140416 --force
       
       - name: Git clone
