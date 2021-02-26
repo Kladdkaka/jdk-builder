@@ -43,3 +43,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - uses: msys2/setup-msys2@v2
+        with:
+          update: true
+          install: >-
+            msys-zip
+            msys-unzip
+      
+      - shell: msys2 {0}
+        run: |
+          uname -a
