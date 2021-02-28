@@ -26,4 +26,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           choco install cygwin
+          C:\tools\cygwin\cygwinsetup.exe -q -P make,unzip,automake,autoconf,zip
           echo test, and deploy your project.
